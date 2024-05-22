@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
 import Menu from './Menu';
+import SearchBar from './SearchBar';
+import NavIcons from './NavIcons';
+import { ShoppingCart } from 'lucide-react';
 
 const Navbar = () => {
 	return (
@@ -18,13 +21,17 @@ const Navbar = () => {
 				<div className='hidden md:flex items-center justify-between gap-8 h-full'>
 					{/* LEFT */}
 					<div className='w-1/3'>
-						<Link href='/'>
+						<Link href='/' className='flex items-center gap-3'>
+							<ShoppingCart />
 							<div className='text-2xl tracking-wide uppercase'>wamo</div>
 						</Link>
 					</div>
 
 					{/* RIGHT */}
-					<div className='w-2/3'>h</div>
+					<div className='w-2/3'>
+						<SearchBar />
+						<NavIcons />
+					</div>
 				</div>
 			</div>
 		</header>
