@@ -20,7 +20,7 @@ const Navbar = () => {
 				{/* BIGGER SCREENS */}
 				<div className='hidden md:flex items-center justify-between gap-8 h-full'>
 					{/* LEFT */}
-					<div className='w-1/3'>
+					<div className=''>
 						<Link href='/' className='flex items-center gap-3'>
 							<ShoppingCart />
 							<div className='text-2xl tracking-wide uppercase'>wamo</div>
@@ -28,7 +28,7 @@ const Navbar = () => {
 					</div>
 
 					{/* RIGHT */}
-					<div className='w-2/3'>
+					<div className='flex items-center justify-between gap-3'>
 						<SearchBar />
 						<NavIcons />
 					</div>
