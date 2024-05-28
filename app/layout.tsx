@@ -4,7 +4,7 @@ import './globals.css';
 import { siteConfig } from '@/config/site';
 import { fontSans } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
-import Navbar from '@/components/Navbar';
+import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
@@ -35,12 +35,14 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en' suppressHydrationWarning>
-			<body className={cn(fontSans.variable, 'dark:bg-slate-900/90')}>
-				<Navbar />
-				<main className='flex flex-col'>
-					<div className='flex-1'>{children}</div>
-				</main>
-				<Footer />
+			<body className={cn(fontSans.variable)}>
+				<div className='flex flex-col min-h-screen overflow-hidden'>
+					<Header />
+					<main className='flex-grow'>
+						<>{children}</>
+					</main>
+					<Footer />
+				</div>
 			</body>
 		</html>
 	);
