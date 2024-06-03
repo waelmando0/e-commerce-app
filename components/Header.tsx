@@ -28,7 +28,7 @@ const Header = () => {
 						</Link>
 
 						{/* RIGHT */}
-						<div className='w-2/3 flex items-center justify-between gap-3'>
+						<div className='w-2/3 flex items-center justify-between gap-8'>
 							<SearchBar />
 							<NavIcons />
 						</div>
