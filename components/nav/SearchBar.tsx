@@ -26,7 +26,7 @@ const SearchBar = () => {
 				className='flex-1 bg-transparent outline-none'
 			/>
 			<button className='cursor-pointer'>
-				<SearchIcon className='w-5 h-5 gray-text-500' />
+				<SearchIcon className='w-5 h-5 gray-slate-600' />
 			</button>
 		</form>
 	);

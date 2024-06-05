@@ -8,8 +8,8 @@ import { ShoppingCart } from 'lucide-react';
 const Header = () => {
 	return (
 		<header>
-			<div className='max-w-7xl mx-auto px-5 lg:px-6 relative'>
-				<div className='py-4'>
+			<div className='max-w-7xl mx-auto px-8 relative'>
+				<div className='py-8'>
 					{/* Mobile */}
 					<div className='md:hidden flex items-center justify-between'>
 						<Link href='/'>
@@ -26,6 +26,34 @@ const Header = () => {
 							<ShoppingCart />
 							<div className='text-2xl tracking-wide uppercase'>wamo</div>
 						</Link>
+
+						<ul className='hidden xl:flex gap-4 transition-colors'>
+							<li>
+								<Link href='/' className='text-slate-600 hover:text-black'>
+									Homepage
+								</Link>
+							</li>
+							<li>
+								<Link href='/' className='text-slate-600 hover:text-black'>
+									Shop
+								</Link>
+							</li>
+							<li>
+								<Link href='/' className='text-slate-600 hover:text-black'>
+									Deals
+								</Link>
+							</li>
+							<li>
+								<Link href='/' className='text-slate-600 hover:text-black'>
+									About
+								</Link>
+							</li>
+							<li>
+								<Link href='/' className='text-slate-600 hover:text-black'>
+									Contact
+								</Link>
+							</li>
+						</ul>
 
 						{/* RIGHT */}
 						<div className='w-2/3 flex items-center justify-between gap-8'>
