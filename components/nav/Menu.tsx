@@ -41,7 +41,7 @@ const Menu = () => {
 			</button>
 			{open && (
 				<div>
-					<ul className='absolute bg-black text-white left-0 top-20 w-full h-[calc(100vh-80px)] flex flex-col justify-center items-center gap-8 text-xl z-10 px-6'>
+					<ul className='absolute bg-black text-white left-0 top-20 w-full h-[calc(100vh-80px)] flex flex-col justify-center items-center gap-8 text-xl z-10 px-8'>
 						{links.map((item) => (
 							<li key={item.route}>
 								<Link

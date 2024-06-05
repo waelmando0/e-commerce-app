@@ -9,7 +9,7 @@ const Header = () => {
 	return (
 		<header>
 			<div className='max-w-7xl mx-auto px-8 relative'>
-				<div className='py-8'>
+				<div className='py-6 lg:py-8'>
 					{/* Mobile */}
 					<div className='md:hidden flex items-center justify-between'>
 						<Link href='/'>
