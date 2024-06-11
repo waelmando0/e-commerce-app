@@ -50,7 +50,7 @@ const Menu = () => {
 										'text-xl font-medium transition-colors ease-in-out',
 										item.active
 											? 'text-white '
-											: 'text-white/60 hover:text-white'
+											: 'text-white/80 hover:text-white'
 									)}
 								>
 									<span>{item.label} </span>
